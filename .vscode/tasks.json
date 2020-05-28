@@ -9,7 +9,8 @@
                 "-g",
                 "-o",
                 "C/${fileBasenameNoExtension}",
-                "C/${fileBasenameNoExtension}.c"
+                "C/${fileBasenameNoExtension}.c",
+                "C/hello/src/HelloWorld.c"
             ],
             "group": {
                 "kind": "build",

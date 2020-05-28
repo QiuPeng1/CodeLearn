@@ -1,6 +1,6 @@
-#include<stdio.h>
+#include "./../inc/_helloworld.h"
  
-int main()
+int test_hello(char * str)
 {
     int i,j,k;
     printf("\n");
@@ -9,6 +9,7 @@ int main()
             for (k=1;k<5;k++) { // 确保i、j、k三位互不相同
                 if (i!=k&&i!=j&&j!=k) { 
                     printf("%d,%d,%d\n",i,j,k);
+                    printf("%s\n",str);
                 }
             }
         }
