@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "-o",
+                "${fileBasenameNoExtension}",
+                "main/src/${fileBasenameNoExtension}.c",
+                "hello1/src/*.c",
+                "hello2/src/*.c",
+                "-I",
+                "main/inc/",
+                "-I",
+                "hello1/inc/",
+                "-I",
+                "hello2/inc/",
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
