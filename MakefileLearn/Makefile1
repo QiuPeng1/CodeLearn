@@ -1,0 +1,7 @@
+# Makefile (井号为注释)
+all:
+	g++ -o hello main.cpp function1.cpp function2.cpp
+clean:
+	del hello.exe
+	del *.o
+	   

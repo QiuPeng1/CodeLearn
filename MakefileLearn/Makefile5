@@ -1,0 +1,18 @@
+OBJS = $(patsubst %.cpp, %.o, $(wildcard *.cpp))
+CC = g++
+CFLAGS = -c -Wall
+LFLAGS = -Wall
+
+all: hello
+hello: $(OBJS)
+	$(CC) $(LFLAGS) $^ -o $@
+main.o: main.cpp
+	$(CC) $(CFLAGS) $< -o $@
+function1.o: function1.cpp
+	$(CC) $(CFLAGS) $< -o $@
+function2.o: function2.cpp
+	$(CC) $(CFLAGS) $< -o $@
+
+clean:
+	del *.o
+	del *.exe

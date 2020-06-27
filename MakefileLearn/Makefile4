@@ -1,0 +1,17 @@
+CC = g++
+CFLAGS = -c -Wall
+LFLAGS = -Wall
+
+all: hello
+hello: main.o function1.o function2.o
+	$(CC) $(LFLAGS) $^ -o $@
+main.o: main.cpp
+	$(CC) $(CFLAGS) $<
+function1.o: function1.cpp
+	$(CC) $(CFLAGS) $<
+function2.o: function2.cpp
+	$(CC) $(CFLAGS) $<
+
+clean:
+	del *.o
+	del *.exe
