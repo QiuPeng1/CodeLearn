@@ -8,4 +8,6 @@ int main()
     printf("%s,%d\n", str2, 20);
     hello_test1(str1);
     hello_test2(str2); 
+
+    printf("%s,%d\n", str2, 20);
 }
